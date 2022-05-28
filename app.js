@@ -19,7 +19,7 @@ app.get('/:loop', (req, res) => {
         var randomHour = MathOfBax.random(0,23)
         var randomMin = MathOfBax.random(0,59)
         var randomSec = MathOfBax.random(0,59)
-        var randomFloat = MathOfBax.random(0,59)
+        var randomFloat = MathOfBax.randomFloat(0.1,99.99,2)
         sample_data += "{x: new Date(" + randomYear + ", " + randomMonth + ", " + randomDay + ", " + randomHour + ", " + randomMin + ", " + randomSec + "), y: " + randomFloat + "},"
     }
     sample_data += "]"
